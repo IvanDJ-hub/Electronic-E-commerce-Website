@@ -1,0 +1,2 @@
+Hi everyone. So this is my project for my graduating. I had a lot of oppssiosn but I chose website. For now the site is like on 33% to 44% done. When it's done or i do something on it u will see my changes. And not when it's done something because I have time where 
+I have to observe. So if you are interest in to it u can type me for how to manage it and I will always answer you. See ya and i hope this will help u for blank for your website :).
