@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="./images/favicon.png">
+    <title>Електрическо Удобство</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <!-- bootstrap links -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- bootstrap links -->
+    <!-- fonts links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+    <!-- fonts links -->
+</head>
+<body>
+
+  <!-- top navbar -->
+  <div class="top-navbar">
+    <p>Добре дошли в нашия магазин</p>
+    <div class="icons">
+        <a href="login.html" id="loginLink"><img src="./images/register.png" alt="" width="18px">Влизане</a>
+        <a href="register.html" id="registerLink"><br><img src="./images/register.png" alt="" width="18px">Регистрация</a>
+        <div id="userDropdown" class="dropdown hidden">
+            <h1 id="userName" class="dropdown-toggle" data-bs-toggle="dropdown"></h1>
+            <ul class="dropdown-menu" id="dropdownMenu">
+                <li><a class="dropdown-item" href="#" id="logoutLink">Излизане от профила</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!-- top navbar -->
+
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg" id="navbar">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html" id="logo"><span id="span1">Е</span>Лектрическо <span>Удобство</span></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span><img src="./images/menu.png" alt="" width="30px"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Начало</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="products.html">Продукти</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Категории
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color: rgb(67 0 86);">
+                  <li><a class="dropdown-item" href="#">Телефони</a></li>
+                  <li><a class="dropdown-item" href="#">Мишки</a></li>
+                  <li><a class="dropdown-item" href="#">Камери</a></li>
+                  <li><a class="dropdown-item" href="#">Хладилници</a></li>
+                  <li><a class="dropdown-item" href="#">Климатици</a></li>
+                  <li><a class="dropdown-item" href="#">Смарт Часовници</a></li>
+                  <li><a class="dropdown-item" href="#">Слушалки</a></li>
+                  <li><a class="dropdown-item" href="#">Лаптопи</a></li>
+                  <li><a class="dropdown-item" href="#">Домакински уреди</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">За нас</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Контакти</a>
+              </li>
+            </ul>
+            <form class="d-flex" id="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    <!-- navbar -->
+
+    
+    <div class="container" id="product-cards">
+        <h1 class="text-center">Напояване</h1>
+
+        <div class="row" style="margin-top: 30px;">
+            <div class="col-md-3 py-3 py-md-0">
+                <div class="card">
+                   <img src="./images/irr1.png" alt="" >
+                    <div class="card-body">
+                        <h3 class="text-center">Маркучи напояване</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 py-3 py-md-0">
+                <div class="card">
+                    <img src="./images/irr2.png" alt="" height="280px">
+                    <div class="card-body">
+                        <h3 class="text-center">Разпръсквачи и пистолети </h3>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 py-3 py-md-0">
+                <div class="card">
+                    <img src="./images/irr3.png" alt="">
+                    <div class="card-body">
+                        <h3 class="text-center">Макари и колички</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 py-3 py-md-0">
+                <div class="card">
+                    <img src="./images/irr4.png" alt="">
+                    <div class="card-body">
+                        <h3 class="text-center">Тревни смески</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row" style="margin-top: 30px;">
+            <div class="col-md-3 py-3 py-md-0">
+                <div class="cardnone">
+                    <img src="./images/gns5.png" alt="" >
+                    <div class="card-body">
+                        <h3 class="text-center">Люлки</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 py-3 py-md-0">
+                <div class="cardnone">
+                    <img src="./images/gns6.png" alt="">
+                    <div class="card-body">
+                        <h3 class="text-center">Други помпи</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 py-3 py-md-0">
+                <div class="cardnone">
+                    <img src="./images/gns7.png" alt="">
+                    <div class="card-body">
+                        <h3 class="text-center">Шатри</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 py-3 py-md-0">
+                <div class="cardnone">
+                    <img src="./images/pum8.png" alt="">
+                    <div class="card-body">
+                        <h3 class="text-center">Чадъри</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row" style="margin-top: 30px;">
+            <div class="col-md-3 py-3 py-md-0">
+                <div class="cardnone">
+                    <img src="./images/pum9.png" alt="">
+                    <div class="card-body">
+                        <h3 class="text-center">Вибрационни помпи</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 py-3 py-md-0">
+                <div class="cardnone">
+                    <img src="./images/gam10.png" alt="" height="280px">
+                    <div class="card-body">
+                        <h3 class="text-center">Електрически храсторези</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 py-3 py-md-0">
+                <div class="cardnone">
+                    <img src="./images/gam11.png" alt="" height="280px">
+                    <div class="card-body">
+                        <h3 class="text-center">Акумулаторни ножици и храсторези</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 py-3 py-md-0">
+                <div class="cardnone">
+                    <img src="./images/gam12.png" alt="">
+                    <div class="card-body">
+                        <h3 class="text-center">Клонотрошачи</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <div class="row" style="margin-top: 30px;">
+        <div class="col-md-3 py-3 py-md-0">
+            <div class="cardnone">
+                <img src="./images/gam13.png" alt="" >
+                <div class="card-body">
+                    <h3 class="text-center">Аератори</h3>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 py-3 py-md-0">
+            <div class="cardnone">
+                <img src="./images/gam14.png" alt="" >
+                <div class="card-body">
+                    <h3 class="text-center">Електрически снегорини</h3>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 py-3 py-md-0">
+            <div class="cardnone">
+                <img src="./images/gam15.png" alt="">
+                <div class="card-body">
+                    <h3 class="text-center">Моторни снегорини</h3>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 py-3 py-md-0">
+            <div class="cardnone">
+                <img src="./images/gam16.png" alt="">
+                <div class="card-body">
+                    <h3 class="text-center">Листосъбирачи</h3>
+                </div>
+            </div>
+        </div>
+
+<div class="row" style="margin-top: 30px;">
+    <div class="col-md-3 py-3 py-md-0">
+        <div class="cardnone">
+            <img src="./images/gam17.png" alt="" height="275px">
+            <div class="card-body">
+                <h3 class="text-center">Машини за цепене на дърва</h3>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3 py-3 py-md-0">
+        <div class="cardnone">
+            <img src="./images/gam18.png" alt="" >
+            <div class="card-body">
+                <h3 class="text-center">Моторни пръскачки</h3>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3 py-3 py-md-0">
+        <div class="cardnone">
+            <img src="./images/gam19.png" alt="">
+            <div class="card-body">
+                <h3 class="text-center">Ръчни пръскачки</h3>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3 py-3 py-md-0">
+        <div class="cardnone">
+            <img src="./images/gam20.png" alt="" height="274px">
+            <div class="card-body">
+                <h3 class="text-center">Машини за заточване на вериги</h3>
+            </div>
+        </div>
+    </div>
+
+<div class="row" style="margin-top: 30px;">
+    <div class="col-md-3 py-3 py-md-0">
+        <div class="cardnone">
+            <img src="./images/gam21.png" alt="" height="268px">
+            <div class="card-body">
+                <h3 class="text-center">Аксесоари за градински машини</h3>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3 py-3 py-md-0">
+        <div class="cardnone">
+            <img src="./images/gam22.png" alt="" >
+            <div class="card-body">
+                <h3 class="text-center">Моторни свредели</h3>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3 py-3 py-md-0">
+        <div class="cardnone">
+            <img src="./images/gam23.png" alt="">
+            <div class="card-body">
+                <h3 class="text-center">Трактори за косене</h3>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3 py-3 py-md-0">
+        <div class="cardnone">
+            <img src="./images/gam24.png" alt="" height="268px">
+            <div class="card-body">
+                <h3 class="text-center">Аксесоари за моторни фрези</h3>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+<div class="row" style="margin-top: 30px;">
+    <div class="col-md-3 py-3 py-md-0">
+        <div class="cardnone">
+            <img src="./images/gam25.png" alt="">
+            <div class="card-body">
+                <h3 class="text-center">Аксесоари за градински пръскачки</h3>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3 py-3 py-md-0">
+        <div class="cardnone">
+            <img src="./images/gam26.png" alt="" >
+            <div class="card-body">
+                <h3 class="text-center">Акумулаторни пръскачки</h3>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3 py-3 py-md-0">
+        <div class="cardnone">
+            <img src="./images/ftk27.png" alt="" height="270px">
+            <div class="card-body">
+                <h3 class="text-center">Други кухненски принадлежности</h3>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3 py-3 py-md-0">
+        <div class="cardnone">
+            <img src="./images/ftk28.png" alt="" height="270px">
+            <div class="card-body">
+                <h3 class="text-center">Дъски, ножове и белачки</h3>
+            </div>
+        </div>
+    </div>
+
+    <div class="row" style="margin-top: 15px;">
+        <div class="col-md-3 py-3 py-md-0">
+            <div class="cardnone">
+                <img src="./images/ftk29.png" alt="">
+                <div class="card-body">
+                    <h3 class="text-center">Кани, гарафи и бутилки</h3>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 py-3 py-md-0">
+            <div class="cardnone">
+                <img src="./images/ftk30.png" alt="" >
+                <div class="card-body">
+                    <h3 class="text-center">Сервизи, чаши и чинии</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
+
+
+      <!-- other cards none-->
+    <div class="cardnone">
+    <div class="container" id="other">
+      <div class="row">
+        <div class="col-md-4 py-3 py-md-0">
+          <div class="card">
+            <div class="card-img-overlay">
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 py-3 py-md-0">
+          <div class="card">
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 py-3 py-md-0">
+          <div class="card">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+    <!-- other cards -->
+
+
+
+
+      <div class="row" style="margin-top: 30px;">
+        <div class="col-md-3 py-3 py-md-0">
+          <div class="cardnone">
+            <img src="./images/pr5.png" alt="">
+            <div class="card-body">
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 py-3 py-md-0">
+          <div class="cardnone">
+            <img src="./images/pr6.png" alt="">
+            <div class="card-body">
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 py-3 py-md-0">
+          <div class="cardnone">
+            <img src="./images/pr7.png" alt="">
+            <div class="card-body">
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 py-3 py-md-0">
+          <div class="cardnone">
+            <img src="./images/pr8.png" alt="">
+            <div class="card-body">
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="row" style="margin-top: 30px;">
+        <div class="col-md-3 py-3 py-md-0">
+          <div class="cardnone">
+            <img src="./images/pr9.png" alt="">
+            <div class="card-body">
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 py-3 py-md-0">
+          <div class="cardnone">
+            <img src="./images/pr10.png" alt="">
+            <div class="card-body">
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 py-3 py-md-0">
+          <div class="cardnone">
+            <img src="./images/pr11.png" alt="">
+            <div class="card-body">
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 py-3 py-md-0">
+          <div class="cardnone">
+            <img src="./images/pr12.png" alt="">
+            <div class="card-body">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- product cards -->
+
+
+
+
+
+
+
+
+
+    <!-- offer -->
+    <div class="container" id="offer">
+      <div class="row">
+        <div class="col-md-3 py-3 py-md-0">
+          <i class="fa-solid fa-cart-shopping"></i>
+          <h3>Безплатна доставка</h3>
+          <p>На поръчки над 300 lv</p>
+        </div>
+        <div class="col-md-3 py-3 py-md-0">
+          <i class="fa-solid fa-rotate-left"></i>
+          <h3>Безплатно връщане</h3>
+          <p>В период от 30 дни</p>
+        </div>
+        <div class="col-md-3 py-3 py-md-0">
+          <i class="fa-solid fa-truck"></i>
+          <h3>Бързи доставки</h3>
+          <p>По целия свят</p>
+        </div>
+        <div class="col-md-3 py-3 py-md-0">
+          <i class="fa-solid fa-thumbs-up"></i>
+          <h3>Голям набор</h3>
+          <p>От продукти</p>
+        </div>
+      </div>
+    </div>
+    <!-- offer -->
+
+
+
+
+
+    
+    <!-- newslater -->
+    <div class="container" id="newslater">
+      <h3 class="text-center">Абонирайте се за нашите специални оферти.</h3>
+      <div class="input text-center">
+        <input type="text" placeholder="Enter Your Email...">
+        <button id="subscribe">Абониране</button>
+      </div>
+    </div>
+    <!-- newslater -->
+
+
+
+
+
+
+    <!-- footer -->
+    <footer id="footer">
+      <div class="footer-top">
+        <div class="container">
+          <div class="row">
+
+            <div class="col-lg-3 col-md-6 footer-contact">
+              <h3>Електрическо Удобство</h3>
+              <p>
+                гр. Пловдив <br>
+                бул. Санкт Петербур <br>
+                България <br>
+              </p>
+              <strong>Phone:</strong> 076/ 686 220 <br>
+              <strong>Email:</strong> electroniccomfort@gmail.com <br>
+            </div>
+
+            <div class="col-lg-3 col-md-6 footer-links">
+              <h4>Usefull Links</h4>
+             <ul>
+              <li><a href="index.html">Начало</a></li>
+              <li><a href="about.html">За нас</a></li>
+              <li><a href="contact.html">Услуги</a></li>
+              <li><a href="#">Terms of service</a></li>
+              <li><a href="#">Priftky policey</a></li>
+             </ul>
+            </div>
+
+
+
+           
+
+
+            <div class="col-lg-3 col-md-6 footer-links">
+              <h4>Нашите социални мрежи</h4>
+              <p>Може да ни последвате в социалните ни мрежи за допълнителни събития.</p>
+
+              <div class="socail-links mt-3">
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              </div>
+            
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <hr>
+      <div class="container py-4">
+        <div class="copyright">
+          &copy; Copyright <strong><span>Електрическо Удобство</span></strong>. Всички права са запазени
+        </div>
+        <div class="credits">
+          Designed by <a href="IvanDzhadzhev.html">Ivan Dzhadzhev</a>
+        </div>
+      </div>
+    </footer>
+    <!-- footer -->
+
+
+
+
+
+
+
+    <a href="#" class="arrow"><i><img src="./images/arrow.png" alt=""></i></a>
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="index.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+</body>
+</html>
